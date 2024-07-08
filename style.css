@@ -28,6 +28,8 @@ body {
     overflow-x: hidden;
 
     color: var(--black);
+    transform: scale(4);
+    transform-origin: 0 0;
 }
 
 .grid-12 {
