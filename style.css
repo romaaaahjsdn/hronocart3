@@ -28,7 +28,7 @@ body {
     background-color: var(--light-bg);
     overflow-x: hidden;
     color: var(--black);
-    transform: scale(4);
+    transform: scale(3.9);
     transform-origin: 0 0;
 }
 
@@ -377,7 +377,7 @@ section {
 }
 
 .block {
-    width: 250px;
+    width: 245px;
     height: 500px;
     background-color: #FFFFFF;
     border-radius: 25px;
@@ -389,7 +389,7 @@ section {
     text-align: center;
     vertical-align: middle;
     padding-top: 20px;
-    padding-left: 16px;
+    padding-left: 13px;
 }
 
 .arrow-btn {
