@@ -20,13 +20,13 @@
     src: local('ALS Sector Bold'), url('/static/fonts/ALS_Sector-Bold.otf') format("truetype");
 }
 
+
 body {
     font-family: 'ALS Sector', sans-serif;
     -webkit-font-smoothing: antialiased;
     margin: 0;
     background-color: var(--light-bg);
     overflow-x: hidden;
-
     color: var(--black);
     transform: scale(4);
     transform-origin: 0 0;
@@ -74,6 +74,7 @@ section {
     position: fixed;
     z-index: 100;
 }
+
 
 .toolbar-container {
     width: 100%;
@@ -169,16 +170,13 @@ section {
 }
 
 
-
-
 .container-white {
-    width: 100vw;
-    background-color: white;
+    width: 250px;
+    height: 430px;
+    color: #FF7648;
 }
 
-.container-4 {
-    grid-column: span 4 / span 2;
-}
+
 
 .container-6 {
     grid-column: span 6 / span 2;
@@ -338,9 +336,10 @@ section {
 }
 
 .block {
-    padding: 56px 40px;
-    background-color: white;
-    border-radius: 30px;
+    width: 250px;
+    height: 500px;
+    background-color: #FF7648;
+    border-radius: 25px;
 }
 
 .inline-container {
@@ -348,6 +347,7 @@ section {
     height: 200px;
     text-align: center;
     vertical-align: middle;
+    padding-top: 20px;
 }
 
 .arrow-btn {
@@ -513,3 +513,5 @@ footer a:hover {
 .arrow-btn:hover {
     background-color: var(--light-grey);
 }
+
+
