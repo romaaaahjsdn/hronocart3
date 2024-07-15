@@ -34,7 +34,7 @@ body {
 
 .day{
     font-family: "ALS Sector",sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: normal;
     text-decoration: none;
     color: #303030;
@@ -48,7 +48,6 @@ body {
     text-decoration: none;
     color: #303030;
     padding-left: 3px;
-    mso-padding-betwen: 3px;
 }
 
 .dateblock{
