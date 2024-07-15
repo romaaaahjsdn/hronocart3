@@ -28,7 +28,7 @@ body {
     background-color: var(--light-bg);
     overflow-x: hidden;
     color: var(--black);
-    transform: scale(3.85);
+    transform: scale(3.9);
     transform-origin: 0 0;
 }
 
