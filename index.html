@@ -5,6 +5,38 @@
     <link rel="stylesheet" href="/hronocart3/style.css">
 </head>
 <body>
+<div class="dateblock3">
+    <div class="dateblock2">
+        <div class="day" id="currentDay"></div>
+        <div class="dateblock">
+            <div class="dateblock2">
+                <div class="text2" id="currentMonth"></div>
+                <div class="text2" id="currentYear"></div>
+            </div>
+            <div class="text2" id="currentDayOfWeek"></div>
+        </div>
+    </div>
+</div>
+<script>
+  var yearElement = document.getElementById('currentYear');
+  var monthElement = document.getElementById('currentMonth');
+  var dayElement = document.getElementById('currentDay');
+  var dayOfWeekElement = document.getElementById('currentDayOfWeek');
+
+  setInterval(function () {
+    var currentDate = new Date();
+
+    var year = currentDate.getFullYear();
+    var month = currentDate.toLocaleString('ru-RU', { month: 'long' });
+    var day = currentDate.getDate();
+    var dayOfWeek = currentDate.toLocaleString('ru-RU', { weekday: 'long' });
+
+    yearElement.textContent = year;
+    monthElement.textContent = month;
+    dayElement.textContent = day;
+    dayOfWeekElement.textContent = dayOfWeek;
+  }, 1000);
+</script>
     <div class="block">
     <div class="section">
         <div class="inline-container">
