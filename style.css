@@ -28,7 +28,7 @@ body {
     background-color: var(--light-bg);
     overflow-x: hidden;
     color: var(--black);
-    transform: scale(4);
+    transform: scale(3.8);
     transform-origin: 0 0;
 }
 
@@ -67,6 +67,13 @@ body {
 .dateblock3{
     padding: 6px;
     padding-left: 15px;
+}
+
+
+.timeblock{
+    padding: 6px;
+    padding-left: 15px;
+    padding-top: 15px;
 }
 
 .grid-12 {
@@ -395,8 +402,8 @@ section {
 .arrow-btn {
     width: 220px;
     height: 58px;
-    background-color: #4DC591;
-    border: 1px solid #dddddd;
+    background-color: #E1EFFB;
+    border: 1px solid #0075FF;
     border-radius: 15px;
     margin: 3px;
     text-align: left;
@@ -422,6 +429,9 @@ section {
     gap: 20px;
 }
 
+.time-text {
+    padding-left: 20px;
+}
 .icon-text-block {
     cursor: pointer;
     text-decoration: none;
@@ -556,4 +566,8 @@ footer a:hover {
     background-color: var(--light-grey);
 }
 
-
+/* === range theme and appearance === */
+input[type="range"] {
+	font-size: 1.5rem;
+	width: 9em;
+}
