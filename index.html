@@ -1,10 +1,21 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/hronocart3/style.css">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static '../static/style.css' %}">
+    <meta name="viewport" content="width=device-width">
+    {% block css %}{% endblock %}
 </head>
 <body>
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+
 <div class="dateblock3">
     <div class="dateblock2">
         <div class="day" id="currentDay"></div>
@@ -40,14 +51,16 @@
     <div class="block">
     <div class="section">
         <div class="inline-container">
-            <button class="arrow-btn" onclick="window.location='https://romaaaahjsdn.github.io/hronocart2/'"><div class="button_text">Утро</div></button>
-            <button class="arrow-btn" onclick="window.location='https://romaaaahjsdn.github.io/hronocart2/'"><div class="button_text">Утро</div></button>
-            <button class="arrow-btn" onclick="window.location='https://romaaaahjsdn.github.io/hronocart2/'"><div class="button_text">Утро</div></button>
-            <button class="arrow-btn" onclick="window.location='https://romaaaahjsdn.github.io/hronocart2/'"><div class="button_text">Утро</div></button>
-            <button class="arrow-btn" onclick="window.location='https://romaaaahjsdn.github.io/hronocart2/'"><div class="button_text">Утро</div></button>
-            <button class="arrow-btn" onclick="window.location='https://romaaaahjsdn.github.io/hronocart2/'"><div class="button_text">Утро</div></button>
+        <button class="arrow-btn" onclick="window.location='http://localhost:8000/test/test2/'"><div class="button_text">Утро</div></button>
+        <button class="arrow-btn" onclick="window.location='http://localhost:8000/test/day/'"><div class="button_text">День</div></button>
+        <button class="arrow-btn" onclick="window.location='http://localhost:8000/test/evening/'"><div class="button_text">Вечер</div></button>
+        <button class="arrow-btn" onclick="window.location='http://localhost:8000/test/night/'"><div class="button_text">Ночь</div></button>
         </div>
     </div>
+    </div>
+    <div class="grid">
+        {% block content %}
+        {% endblock %}
     </div>
 </body>
 </html>
