@@ -385,7 +385,7 @@ section {
 
 .block {
     width: 245px;
-    height: 500px;
+    height: 6000px;
     background-color: #FFFFFF;
     border-radius: 25px;
 }
@@ -407,6 +407,17 @@ section {
     border-radius: 15px;
     margin: 3px;
     text-align: left;
+}
+
+.save-btn {
+    width: 220px;
+    height: 30px;
+    background-color: #E1EFFB;
+    border: 1px solid #0075FF;
+    border-radius: 15px;
+    margin: 3px;
+    text-align: center;
+    margin-left: 11px;
 }
 
 .section-first {
